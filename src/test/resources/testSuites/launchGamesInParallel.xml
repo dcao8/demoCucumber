@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="Launch Game in Parallel" >-->
+    <suite name="Launch Game in Parallel" thread-count="2" parallel="tests">
+    <test name="Launch Video Games">
+        <classes>
+            <class name="runners.LaunchVideoGamesTestRunner"></class>
+        </classes>
+    </test>
+    <test name="Launch Other Games">
+        <classes>
+            <class name="runners.LaunchOtherGamesTestRunner"></class>
+        </classes>
+    </test>
+</suite>
